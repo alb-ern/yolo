@@ -6,7 +6,7 @@ import torch
 from ultralytics import YOLO
 
 _device = "cuda" if torch.cuda.is_available() else "cpu"
-_model = YOLO("yolo26m-pose.pt").to(_device)
+_model = YOLO("yolo26n-pose.pt").to(_device)
 
 
 def get_head_direction(kpts):
